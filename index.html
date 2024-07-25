@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Car Information Form</h2>
+
+<!-- Form to input car data -->
+<form id="carForm">
+  <label for="company">Company:</label><br>
+  <input type="text" id="company" name="company"><br><br>
+  <label for="model">Model:</label><br>
+  <input type="text" id="model" name="model"><br><br>
+  <label for="year">Year:</label><br>
+  <input type="text" id="year" name="year"><br><br>
+  <input type="button" value="Add Car" onclick="addCar()">
+</form> 
+
+<p id="demo"></p>
+
+<script>
+// Function to add car data from textboxes to the server
+function addCar() {
+  // Get values from textboxes
+  let company = document.getElementById('company').value;
+  let model = document.getElementById('model').value;
+  let year = document.getElementById('year').value;
+
+  // Create a new car object
+  let newCar = {
+    company: company,
+    model: model,
+    year: parseInt(year)
+  };
+
+  // Send the new car object to the server
+  fetch('http://localhost:3000/addCar', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(newCar)
+  })
+  .then(response => response.text())
+  .then(data => {
+    console.log(data);
+    displayCars();
+  });
+}
+
+// Function to display the cars array from the server
+function displayCars() {
+  fetch('http://localhost:3000/cars')
+    .then(response => response.json())
+    .then(cars => {
+      let displayText = cars.map(car => `ID: ${car.id}, Company: ${car.company}, Model: ${car.model}, Year: ${car.year}`).join('<br>');
+      document.getElementById('demo').innerHTML = displayText;
+    });
+}
+
+// Initial display of cars array
+displayCars();
+</script>
+
+</body>
+</html>
