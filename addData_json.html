@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Car Information Form</h2>
+
+<!-- Form to input car data -->
+<form id="carForm">
+  <label for="company">Company:</label><br>
+  <input type="text" id="company" name="company"><br><br>
+  <label for="model">Model:</label><br>
+  <input type="text" id="model" name="model"><br><br>
+  <label for="year">Year:</label><br>
+  <input type="text" id="year" name="year"><br><br>
+  <input type="button" value="Add Car" onclick="addCar()">
+</form> 
+
+<p id="demo"></p>
+
+<script>
+// Initial JSON array of car objects
+let cars = [];
+
+// Function to add car data from textboxes to the JSON array
+function addCar() {
+  // Get values from textboxes
+  let company = document.getElementById('company').value;
+  let model = document.getElementById('model').value;
+  let year = document.getElementById('year').value;
+
+  // Create a new car object
+  let newCar = {
+    id: cars.length + 1, // Automatically assign an ID
+    company: company,
+    model: model,
+    year: parseInt(year)
+  };
+
+  // Add the new car object to the cars array
+  cars.push(newCar);
+
+  // Display the updated cars array
+  displayCars();
+}
+
+// Function to display the cars array
+function displayCars() {
+  let displayText = cars.map(car => `ID: ${car.id}, Company: ${car.company}, Model: ${car.model}, Year: ${car.year}`).join('<br>');
+  document.getElementById('demo').innerHTML = displayText;
+}
+</script>
+
+</body>
+</html>

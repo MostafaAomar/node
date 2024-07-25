@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// JSON object containing multiple car objects
+let cars = {
+    "car1": {
+        "company": "Mercedes",
+        "model": "Polo",
+        "year": 2020
+    },
+    "car2": {
+        "company": "BMW",
+        "model": "X5",
+        "year": 2021
+    },
+    "car3": {
+        "company": "Audi",
+        "model": "A6",
+        "year": 2019
+    }
+};
+
+// Adding automatic numeric IDs to each car object
+let id = 1;
+for (let key in cars) {
+    if (cars.hasOwnProperty(key)) {
+        cars[key].id = id++;
+    }
+}
+
+// Display the cars with their new IDs
+let displayText = Object.values(cars).map(car => `ID: ${car.id}, Company: ${car.company}, Model: ${car.model}, Year: ${car.year}`).join('<br>');
+
+document.getElementById('demo').innerHTML = displayText;
+</script>
+
+</body>
+</html>

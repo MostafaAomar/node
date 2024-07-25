@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        // Define a class with a static method
+        class Utilities {
+            // Static method for addition
+            static add(a, b) {
+                return a + b;
+            }
+
+            // Instance method for multiplication
+            multiply(a, b) {
+                return a * b;
+            }
+            
+        }
+
+        // Use void to execute a function that logs the result of the static method
+        void function() {
+            let sum = Utilities.add(5, 10);
+            document.getElementById('demo').innerHTML = sum;// Output: Sum using static method: 15
+        }();
+
+        // Create an instance of the class
+        let util = new Utilities();
+
+        // Log the result of the instance method
+        document.getElementById('demo1').innerHTML = util.multiply(5, 10);// Output: Product using instance method: 50
+       
+        // Use void to return undefined explicitly
+        let result = void (Utilities.add(3, 7));// let result = void(5 + 10);
+        document.getElementById('demo2').innerHTML = result; // Output: Result using void operator: undefined
+    </script>
+</body>
+</html>

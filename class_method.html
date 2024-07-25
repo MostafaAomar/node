@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        // Define a simple class
+class Car {
+  // A static property, which belongs to the class itself
+  static totalCars = 0;
+
+  // Constructor function to initialize an object
+  constructor(brand, model) {
+    this.brand = brand;
+    this.model = model;
+    Car.totalCars += 1; // Increment the static property
+  }
+
+  // A method of the class
+  displayDetails() {
+   document.getElementById('demo1').innerHTML=`Brand: ${this.brand}, Model: ${this.model}`;
+  }
+
+  // A static method
+  static showTotalCars() {
+    document.getElementById('demo2').innerHTML= `Total cars: ${Car.totalCars}`;
+  }
+}
+
+// Creating an object of the Car class
+let car1 = new Car('Toyota', 'Corolla');
+let car2 = new Car('Honda', 'Civic');
+
+// Calling a method on the object
+car1.displayDetails(); // Output: Brand: Toyota, Model: Corolla
+car2.displayDetails(); // Output: Brand: Honda, Model: Civic
+
+// Calling a static method
+Car.showTotalCars(); // Output: Total cars: 2
+
+// Define a simple function that uses `void`
+function displayMessage(message) {
+    document.getElementById('demo3').innerHTML= message;
+  return void 0; // Using void to return undefined explicitly
+}
+
+// Calling the function
+displayMessage('Hello, World!'); // Output: Hello, World!
+displayMessage('hi');
+    </script>
+</body>
+</html>

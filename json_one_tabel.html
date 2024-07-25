@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// JSON array of objects
+let cars = [
+    {
+        "company": "Mercedes",
+        "model": "Polo",
+        "year": 2020
+    },
+    {
+        "company": "BMW",
+        "model": "X5",
+        "year": 2021
+    },
+    {
+        "company": "Audi",
+        "model": "A6",
+        "year": 2019
+    }
+];
+
+// Adding automatic numeric IDs to each car object
+cars.forEach((car, index) => {
+    car.id = index + 1; // IDs start from 1
+});
+
+// Display the cars with their new IDs
+let displayText = cars.map(car => `ID: ${car.id}, Company: ${car.company}, Model: ${car.model}, Year: ${car.year}`).join('<br>');
+
+document.getElementById('demo').innerHTML = displayText;
+</script>
+
+</body>
+</html>

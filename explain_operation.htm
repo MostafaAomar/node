@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+  
+    <script>
+        //Function
+        //A function is a block of code designed to perform a particular task.
+        function car(company, model, year){
+            return company+ model+ year;
+        }
+       // var x = car('Vw', ' ', 'polo ',' ','35');
+        document.getElementById('demo1').innerHTML = car( 'Vw ',  'polo ','2003');
+
+        ///////////////////////////////
+       //Class
+        //A class is a blueprint for creating objects with predefined properties and methods.
+        class mycar{
+            constructor(company, model, year){
+                this.company = company;
+                this.model = model;
+                this.year = year;
+            }
+        }
+        let car1 = new mycar('BMW','polo' ,2020);
+        document.getElementById('demo2').innerHTML = car1.company + ' ' + car1.model + ' ' + car1.year;
+
+        ///////////////////////////////
+        //Object
+        //A method is a function that is defined within a class and can operate on objects of that class.(
+        class mycar1 {
+            constructor(company, model, year){
+                this.company =company;
+                this.model = model;
+                this.year = year;
+        }
+        //Method is the same as function
+        show(){
+            return this.company + ' ' +this.model + ' ' +this.year;
+        }
+    }
+        let car2 = new mycar1('merzedes', 'polo', 2020);// this is an object of 
+        document.getElementById('demo3').innerHTML = car2.show();
+
+
+        // Using void operator
+       // Void
+        //In JavaScript, void is an operator used to evaluate an expression without returning a value.
+        void function() {
+           document.getElementById('demo4').innerHTML= 'This will run, but no value is returned';
+        }();
+
+
+       // Static
+        //A static method belongs to the class itself rather than instances of the class.
+        class Calculator {
+                // Static method to add two numbers
+                static add(a, b) {
+                    return a + b;
+                }
+            }
+            document.getElementById('demo5').innerHTML= Calculator.add(5,6);
+
+            
+    </script>
+</body>
+</html>

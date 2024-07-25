@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Example</title>
+</head>
+<body>
+    <h1>Sort Tageskurs Array</h1>
+    <button onclick="sortAndDisplay()">Sort</button>
+    <div id="output"></div>
+
+    <script>
+        // Example Tageskurs array
+        let kurse = [
+            { value: 5 },
+            { value: 3 },
+            { value: 8 },
+            { value: 1 },
+            { value: 1 },
+            { value: 2 }
+        ];
+
+        // Comparison function
+        function vergleiche(a, b) {
+            return a.value - b.value;
+        }
+
+        // Bubble sort function
+        function sort(kurse, vergleiche) {
+            for (let i = 0; i < kurse.length - 1; i++) {
+                for (let j = 0; j < kurse.length - 1 - i; j++) {
+                    if (vergleiche(kurse[j], kurse[j + 1]) > 0) {
+                        let k = kurse[j];
+                        kurse[j] = kurse[j + 1];
+                        kurse[j + 1] = k;
+                    }
+                }
+            }
+        }
+
+        // Function to sort the array and display the result
+        function sortAndDisplay() {
+            sort(kurse, vergleiche);
+            let outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = "<h2>Sorted Array:</h2>";
+            kurse.forEach(kurs => {
+                outputDiv.innerHTML += `<p>Value: ${kurs.value}</p>`;
+            });
+        }
+    </script>
+</body>
+</html>

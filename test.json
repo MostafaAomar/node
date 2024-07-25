@@ -1,0 +1,43 @@
+[
+    {
+        "name": "John Doe",
+        "age": 30,
+        "city": "New York"
+        
+    },
+    {
+        "name": "Jane Smith",
+        "age": 25,
+        "city": "Los Angeles"
+    },
+    {
+        "name": "Emily Johnson",
+        "age": 35,
+        "city": "Chicago"
+    },
+    {
+        "name": "mily John",
+        "age": 3,
+        "city": "Chica"
+    },
+    {
+        "id": 1,
+        "name": "bioweine",
+        "leitbild": "wir verwenden...."
+    },
+    {
+        "id": 2,
+        "wein_id": 1,
+        "str": "hauptstr 12",
+        "plz": 124563,
+        "ort": "hanhe"
+    },
+    {
+        "id": 3,
+        "wein_id": 1,
+        "str": "hauptstr 50",
+        "plz": 1249897,
+        "ort": "hanhe"
+    }
+]
+

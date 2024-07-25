@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>JSON Data:</h2>
+    <p id="jsonData"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        fetch('test.json') //get json file name
+            .then(response => response.json())
+            .then(data => {
+                if (data && Array.isArray(data)) {
+
+                   
+                    sort(data, Compare); //this line is for sort function
+
+                    let htmlContent = '';
+                    data.forEach(person => {
+                        htmlContent += 'Name: ' + person.name + '<br>' +
+                                       'Age: ' + person.age + '<br>' +
+                                       'City: ' + person.city + '<br><br>';
+                    });
+                    document.getElementById('jsonData').innerHTML = htmlContent;
+                } else {
+                    console.error('Error: No data found or data is not an array');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+
+
+            //sort function
+            function Compare(a, b){
+                return a.age - b.age;
+            }
+
+            function sort(array, Compare){
+                for (let i = 0; i< array.length -1; i++){
+                    for (let j = 0; j < array.length -1 -i; j++){
+                        // array[j] is the current element
+                       // array[j + 1] is the next element
+                        if (Compare(array[j], array[j+1]) > 0){ //calls the Compare function with two elements from the array: array[j] and array[j + 1]. 
+                                                               //returns the difference between the age properties of these two elements.
+                                                               //// If current element is greater than next element
+                             // Swap elements                                  
+                            let temp = array[j]; //temporarily stores the value of array[j] in the variable temp.
+                            array[j] = array[j+1];//assigns the value of array[j + 1] to array[j].
+                            array[j+1] = temp;//assigns the value stored in temp (original array[j]) to array[j + 1].
+
+                        }
+                    }
+                }
+            }
+
+
+
+            //Time in js 
+            var d = new Date();
+            var n = d.getDate();
+            document.getElementById('demo').innerHTML= d;
+            document.getElementById('demo1').innerHTML= n;
+
+            
+    </script>
+   
+    
+    <p id="multidemo"></p>
+    
+    <script>
+    // JSON object containing multiple car objects
+    let cars = {
+        "car1": {
+            "company": "Mercedes",
+            "model": "Polo",
+            "year": 2020
+        },
+        "car2": {
+            "company": "BMW",
+            "model": "X5",
+            "year": 2021
+        },
+        "car3": {
+            "company": "Audi",
+            "model": "A6",
+            "year": 2019
+        }
+    };
+    
+    // Accessing the first car object
+    document.getElementById('multidemo').innerHTML = cars.car1.company + ' ' + cars.car1.model + ' ' + cars.car1.year;
+
+
+    </script>    
+</body>
+</html>
+
