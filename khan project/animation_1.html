@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+</head>
+<body>
+
+<canvas id="myCanvas" data-processing-sources="mySketch.pde"></canvas>
+
+<script type="application/processing" data-processing-target="myCanvas">
+   // Set up the canvas
+size(500, 500);
+//background(200);
+
+// Change the ellipse mode to CORNER
+ellipseMode(CORNER);
+
+var x = 10;//when i change the number it will move that why i need function
+var y = 200;
+var width = 100;
+var height = 20;
+noStroke(); //no lines
+
+draw= function(){
+ 
+// Draw an rect
+background(148, 251, 255);//RBG
+
+
+//car body
+fill(255,0,115);//RBG
+rect(x , y, width, height); //x, y, width, height
+rect(x +15, y -25, width -30, height +20); //x, y, width, height
+
+//wheels
+fill(0);
+ellipse(x +16, y +12, width -75, height+ 5); //x, y, width, height
+ellipse(x +65, y +12, width-75, height+5); //x, y, width, height
+x+=1; //or x = x + 1; or x++
+//y-=2;
+//height *= 99/100; //or height = height *  99/100;
+
+}
+
+//mouse x and y 
+//strokeWeight(3);
+//stroke(57, 0, 214);
+//fill(0, 210, 247);
+
+//draw = function() {
+    
+    background(255, 255, 255);    
+    ellipse(mouseX, mouseY, 30, 30);    
+//}; 
+</script>
+
+</body>
+</html>

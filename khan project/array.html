@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+</head>
+<body>
+
+<canvas id="myCanvas" data-processing-sources="mySketch.pde"></canvas>
+
+<script type="application/processing" data-processing-target="myCanvas">
+// Set up the canvas
+size(500, 400);
+// Change the ellipse mode to CORNER
+//ellipseMode(CORNER);
+noStroke(); //no lines
+
+//modifying arrays
+var Xposition = [150, 250, 350];
+ var draw = function() {
+    background(255,0,0);
+    if (mouseIsPressed) {
+        xPositions.push(mouseX);
+        println("hi");
+    }
+for (var n = 0; n < Xposition.length; n++){
+    //fill(0);
+    //ellipse(Xposition[n], 100, 50,50 );
+    fill(150,100,100);
+    ellipse(Xposition[n], 100, 50,50 );
+   
+    }
+};
+
+//arrays
+var myfriend = "Mostafa";
+var myfriends = ["john", "kim", "zaid", "hello"];
+
+fill(0);
+text(myfriends[1], 10,30);
+text(myfriends.length, 10, 50);
+
+for(var i=0; i < myfriends.length; i++){
+    fill(255,0,0);
+    text(myfriends[i], 50, 30+i*20);
+}
+
+var j=0;
+while(j < myfriends.length){
+    fill(0,0,255);
+    text(myfriends[j], 80, 30+j*20);
+    j++;
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+</head>
+<body>
+
+<canvas id="myCanvas" data-processing-sources="mySketch.pde"></canvas>
+
+<script type="application/processing" data-processing-target="myCanvas">
+// Set up the canvas
+size(500, 400);
+// Change the ellipse mode to CORNER
+//ellipseMode(CORNER);
+//noStroke(); //no lines
+
+background(99,200,255);
+
+fill(221,0,255);
+var x = 100;
+while(x < 350){
+    line(x, 220, 255, 350);//x,y , x2, y2
+    ellipse(x, 200,49,68);
+    
+    x= x+60;
+}
+for (var i = 100; i < 350; i += 60){
+    fill(0);
+    line(i, 300, 250, 400);    
+    ellipse(i,300,50,68);
+}
+
+//nested loop
+for(var n = 0; n < 15; n++){
+    //textSize(20);
+    fill(0,0,0);
+    text(n, 10, n*25+15);
+
+    for (var m = 0; m < 12; m++){
+        fill(255,0,0);
+    text(m, m*40, n*50+20);
+    }
+}
+
+
+</script>
+
+</body>
+</html>

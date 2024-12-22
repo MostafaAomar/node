@@ -1,0 +1,32 @@
+
+{
+    "index": [
+        {
+            "id": 1,
+           "name": "Laut offizieller Mostafa Zahlen der Europäischen Kommission absolvieren ca. 8,6 Prozent der jungen Menschen im Alter von 15 bis 29 Jahren in Deutschland weder ein Studium noch eine Ausbildung, noch sind sie in irgendeiner Beschäftigung. Zudem befinden sie sich auch nicht mehr im regulären Schulbetrieb. Das entspricht bei ca. 13,44 Millionen Personen in der entsprechenden Kategorie, gerundet ungefähr 1,2 Millionen Menschen.",
+        "email": "Die Fachliteratur bezeichnet sie in der Regel als NEETs (Not in Education, Employment or Training). Diese beachtliche Zahl ist besonders im Hinblick auf den Fachkräftemangel in vielen Branchen alarmierend, da das Land es sich im Grunde genommen nicht leisten kann, eine so große Anzahl an Bürgern gesellschaftlich sowie wirtschaftlich, womöglich nicht nur temporär, zu verlieren und die langfristigen Folgen nur schwer abschätzbar sind."
+        },
+        {
+            "id": 2,
+             "name": "Gefährliche Entwicklung - Warum 1,2 Millionen junge Menschen in Deutschland nichts lernen oder arbeiten",
+        "email": "In Deutschland herrscht ein Fachkräftemangel, während ca. 1,2 Millionen junge Menschen faktisch nichts tun. Wer sind diese Verweigerer und was bewegt sie? Sozialforscher Andreas Herteux beleuchtet die Gruppe näher und warnt vor einer gefährlichen Entwicklung."
+        }
+    ],
+    "about": [
+        {
+            "id": 3,
+            "name": "Everything you find here has been specially created by the British Council, the world's English teaching experts.",
+            "email": "Learn English online and improve your skills through our high-quality courses and resources."
+        },
+        {
+            "id": 4,
+            "name": "Practise your listening, reading, writing and speaking and learn useful language to use at work or to communicate effectively with friends.",
+            "email": "Audio and video to practise your listening and speaking skills. Model texts for all types of writing tasks. Work on your reading skills to read more quickly and understand more."
+        },
+        {
+            "id": 4,
+            "name": "If you have a more complex setup or need more control over your environment, you can consider other hosting services that support PHP and have integration with GitHub for continuous deployment, such as Vercel, Netlify, or traditional web hosts. Here’s a brief guide for using another popular service, Netlify, which is primarily for static sites but can handle PHP with certain configurations.",
+            "email": "This way, you use GitHub for version control and code management while deploying your PHP application to a suitable hosting service like Heroku that supports PHP."
+        }
+    ]
+}

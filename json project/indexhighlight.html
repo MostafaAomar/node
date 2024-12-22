@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <input type="text" id="search" placeholder="Enter word to search">
+    </div>
+
+    <ul id="dropdown-list"></ul>
+    <div id="data-sections">
+        <!-- Sections will be dynamically added here -->
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const searchInput = $('#search');
+            const dropdownList = $('#dropdown-list');
+            const dataSections = $('#data-sections');
+            const pageType = $('html').attr('data-page-type') || 'index'; // default to 'index' if not set
+
+            let allData = [];
+            let pageData = [];
+
+            $.getJSON('data.json', function(data) {
+                pageData = data[pageType];
+                allData = [...data.index, ...data.about];
+
+                if (pageData) {
+                    displaySections(pageData);
+
+                    searchInput.on('input', function() {
+                        const searchTerm = $(this).val().toLowerCase();
+                        const filteredData = allData.filter(item =>
+                            item.name.toLowerCase().includes(searchTerm) || 
+                            item.email.toLowerCase().includes(searchTerm)
+                        );
+
+                        displayDropdown(filteredData);
+                        highlightSearchTerm(searchTerm);
+                    });
+
+                    $(document).on('click', function(event) {
+                        if (!dropdownList.is(event.target) && !dropdownList.has(event.target).length && event.target !== searchInput[0]) {
+                            dropdownList.hide();
+                        }
+                    });
+                } else {
+                    console.error('Page data is undefined. Check the data-page-type attribute and JSON structure.');
+                }
+            }).fail(function(error) {
+                console.error('Error fetching JSON:', error);
+            });
+
+            function displaySections(data) {
+                dataSections.empty();
+                data.forEach(item => {
+                    const section = $('<section></section>').attr('id', `section-${item.id}`);
+                    section.html(`<h2>${item.name}</h2><p>Email: ${item.email}</p>`);
+                    dataSections.append(section);
+                });
+            }
+
+            function displayDropdown(data) {
+                dropdownList.empty();
+
+                if (data.length > 0) {
+                    dropdownList.show();
+
+                    data.forEach(item => {
+                        const li = $('<li></li>').text(`${item.name} - ${item.email}`);
+                        li.on('click', function() {
+                            const sectionId = `section-${item.id}`;
+                            const section = $(`#${sectionId}`);
+                            if (section.length) {
+                                $('html, body').animate({
+                                    scrollTop: section.offset().top
+                                }, 800);
+                            } else {
+                                window.location.href = `${pageType === 'index' ? 'about.html' : 'index.html'}#${sectionId}`;
+                            }
+                            dropdownList.hide();
+                            searchInput.val('');
+                        });
+                        dropdownList.append(li);
+                    });
+                } else {
+                    dropdownList.hide();
+                }
+            }
+
+            function highlightSearchTerm(term) {
+                dataSections.find('section').each(function() {
+                    const section = $(this);
+                    let text = section.html();
+                    const regex = new RegExp(`(${term})`, 'gi');
+                    const newText = text.replace(regex, '<span class="highlight">$1</span>');
+                    section.html(newText);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

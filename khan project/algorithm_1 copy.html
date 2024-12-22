@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock with Ones</title>
+   
+</head>
+<style>
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.hour {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+</style>
+
+<body>
+    <div class="clock">
+        <div class="center"></div>
+    </div>
+    <script >
+  const clock = document.querySelector('.clock');
+
+// Create 12 hour markers
+for (let i = 1; i <= 12; i++) {
+  const hour = document.createElement('div');
+  hour.classList.add('hour');
+  hour.textContent = '1';
+
+  // Calculate angle for each hour marker
+  const angle = (i * 30) - 90; // Adjust starting angle as needed
+  hour.style.transform = `rotate(${angle}deg) translate(80px) rotate(-${angle}deg)`;
+
+  clock.appendChild(hour);
+}
+
+
+    </script>
+</body>
+</html>

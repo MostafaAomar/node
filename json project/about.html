@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-page-type="about">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <style>
+        #dropdown-list {
+            display: none;
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            background-color: white;
+            width: 200px;
+            z-index: 1000;
+        }
+        #dropdown-list li {
+            padding: 8px;
+            cursor: pointer;
+        }
+        #dropdown-list li:hover {
+            background-color: #f0f0f0;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>About Page</h1>
+    <input type="text" id="search" placeholder="Search..." autocomplete="off">
+    <ul id="dropdown-list"></ul>
+    <div id="data-sections"></div>
+</body>
+</html>

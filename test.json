@@ -38,6 +38,13 @@
         "str": "hauptstr 50",
         "plz": 1249897,
         "ort": "hanhe"
+    },
+    {
+             "fruits": ["apple", "banana", "cherry", "date"],
+            "vegetables": ["carrot", "broccoli", "spinach"],
+            "meat": ["apple jusi", "banana jusi", "cherry jusi", "date jusi", "By including both, you can see how to handle searches in both simple and more complex scenarios. If you have any specific requirements or need further clarification, feel free to ask!"]
+        
     }
+
 ]
 

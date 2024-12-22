@@ -1,0 +1,270 @@
+[
+      {
+        "question": "Was ist das Internet der Dinge (IoT) und Industrie 4.0?",
+        "answer": "<h4>IoT bezieht sich auf die Vernetzung von Geräten und Maschinen, während Industrie 4.0 auf die digitale Transformation in der Industrie abzielt. <br><strong>Vorteile:</strong><br> sind Automatisierung, Kommunikation und Kosteneinsparung. <br><strong>Nachteile:</strong><br> sind Arbeitslosigkeit, Privatsphäre und Technologieabhängigkeit.</h4>"
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Gesamtpuffer und Freie Puffer?",
+        "answer": "<h4><strong>-Gesamtpuffer:</strong> ist die Zeit, um eine Aufgabe zu verschieben, ohne das Projektende zu beeinträchtigen.<br><strong>- Freie Puffer</strong> ist die Zeit, um eine Aufgabe zu verschieben, ohne die folgende Aufgabe zu beeinflussen.</h4>"
+      },
+      {
+        "question": "Was sind die Phasen im Fünf-Phasen-Modell?##################################################################################################",
+        "answer": "Die Phasen im Fünf-Phasen-Modell sind: Anforderungsanalyse, Systemdesign, Programmierung und Modultests, System- und Integrationstests, Auslieferung und Wartung."
+      },
+      {
+        "question": "Was sind die Phasen im Sechs-Phasen-Modell?",
+        "answer": "Die Phasen im Sechs-Phasen-Modell sind: Planung, Definition, Entwurf, Implementierung, Tests, Auslieferung."
+      },
+      {
+        "question": "Was ist das Spiralmodell?",
+        "answer": "Das Spiralmodell umfasst die Phasen Zieldefinition, Risikoanalyse, Entwicklung und Tests sowie Auswertung."
+      },
+      {
+        "question": "Was ist das 3V-Modell in Bezug auf Big Data?",
+        "answer": "Das 3V-Modell beschreibt die steigende Menge, Geschwindigkeit und Vielfalt der erzeugten Daten."
+      },
+      {
+        "question": "Was ist Agile Softwareentwicklung und was ist Scrum?",
+        "answer": "Agile Softwareentwicklung umfasst iterative Entwicklungsprozesse. Scrum ist eine spezifische Methode innerhalb von Agile, die die Zusammenarbeit von Product Owner, Entwicklungsteam und Scrum Master betont. Sprints dauern ein bis vier Wochen und enden mit einem Review und einer Retrospektive."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einer Klasse und einem Objekt in der objektorientierten Programmierung?",
+        "answer": "Eine Klasse ist ein Oberbegriff für Objekte mit gemeinsamer Struktur und Verhalten, während ein Objekt eine Instanz einer Klasse ist, die zur Laufzeit existiert und Speicherplatz belegt."
+      },
+      {
+        "question": "Was sind Attribute und Methoden in der objektorientierten Programmierung?",
+        "answer": "Attribute sind Daten, die die Struktur von Objekten in einer Klasse beschreiben. Methoden sind Operationen, die das Verhalten von Objekten einer Klasse beschreiben und Parameter haben können."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen public, privat und protected Zugriffsmodifikatoren?",
+        "answer": "Public: Elemente sind öffentlich und von außen zugänglich. Privat: Elemente sind nur innerhalb der eigenen Klasse zugänglich. Protected: Erlaubt den Zugriff auf Elemente von abgeleiteten Klassen."
+      },
+      {
+        "question": "Was bedeutet Kapselung in der objektorientierten Programmierung?",
+        "answer": "Kapselung bedeutet, dass eine Eigenschaft oder Methode nur über Zugriffsmethoden abgefragt oder geändert werden kann."
+      },
+      {
+        "question": "Was ist Vererbung in der objektorientierten Programmierung?",
+        "answer": "Vererbung ist die Erweiterung einer bestehenden Klasse durch eine neue Klasse (Subklasse), die Attribute und Methoden von der Basisklasse erben und erweitern kann."
+      },
+      {
+        "question": "Was sind Assoziationen, Aggregationen und Kompositionen in der objektorientierten Modellierung?",
+        "answer": "Assoziationen zeigen Verbindungen zwischen unabhängigen Objekten. Aggregationen beschreiben eine 'Teil-von'-Beziehung, bei der Teile länger leben als das ganze Objekt. Kompositionen beschreiben eine 'Teil-von'-Beziehung, bei der die Lebensdauer der Teile der des gesamten Objekts entspricht."
+      },
+      {
+        "question": "Was ist ein Interface in der objektorientierten Programmierung?",
+        "answer": "Ein Interface definiert, welche Methoden eine Klasse implementieren muss. Es enthält nur Methodenköpfe und Konstanten. Klassen, die das Interface implementieren, müssen alle vorgegebenen Methoden enthalten."
+      },
+      {
+        "question": "Was sind abstrakte Klassen und abstrakte Methoden?",
+        "answer": "Abstrakte Klassen können keine Instanzen haben und dienen dazu, konkrete Unterklassen abzuleiten. Abstrakte Methoden müssen in den Unterklassen überschrieben werden. Alternativ können alle Methoden vollständig implementiert sein."
+      },
+      {
+        "question": "Was ist dynamische Polymorphie?",
+        "answer": "Dynamische Polymorphie ermöglicht es verschiedenen Objekten, unterschiedliches Verhalten bei gleicher Operation zu zeigen, abhängig vom tatsächlichen Objekttyp zur Laufzeit."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Überladen und Überschreiben in der objektorientierten Programmierung?",
+        "answer": "Überladen bedeutet, dass mehrere Methoden im selben Kontext unterschiedliche Parameter haben. Überschreiben bedeutet, dass eine Unterklasse eine Methode der Oberklasse implementiert und diese Methode bei einem Objekt der Unterklasse aufgerufen wird."
+      },
+      {
+        "question": "Was beschreibt die Datenmodellierung?",
+        "answer": "Datenmodellierung beschreibt Informationsobjekte eines Systems, definiert Attribute und Zusammenhänge für ein Datenschema, oft dargestellt durch ein ER-Modell."
+      },
+      {
+        "question": "Was ist das IHK-Tabellen-Modell?",
+        "answer": "Das IHK-Tabellen-Modell ist ein ER-Diagramm mit modifizierter Chen-Notation, das die Kardinalität zwischen Entitätstypen beschreibt."
+      },
+      {
+        "question": "Was sind Lastenheft und Pflichtenheft?",
+        "answer": "Das Lastenheft umfasst alle Anforderungen des Auftraggebers, während das Pflichtenheft detaillierte Anforderungen, Realisierungsvorgaben und Vertragsbedingungen enthält."
+      },
+      {
+        "question": "Was ist eine Projektskizze?",
+        "answer": "Eine Projektskizze ist ein Dokument zur Beschreibung der Projektidee, das oft als Entscheidungsgrundlage dient."
+      },
+    {
+      "question": "Was ist objektorientierte Programmierung (OOP)?",
+      "answer": "Objektorientierte Programmierung ermöglicht es, die reale Welt in Code umzusetzen und komplexe Systeme durch Objekte und Klassen zu organisieren."
+    },
+    {
+      "question": "Welche Vorteile hat die objektorientierte Programmierung?",
+      "answer": "Die Vorteile der objektorientierten Programmierung sind die Verbesserung der Erweiterbarkeit und Skalierbarkeit durch die Aufteilung des Codes in kleine Module sowie eine einfachere Fehlersuche und -behebung."
+    },
+    {
+      "question": "Welche Nachteile hat die objektorientierte Programmierung?",
+      "answer": "Nachteile sind die erhöhte Komplexität, die ein tiefes Verständnis für Anfänger erfordert, sowie potenziell höhere Ausführungszeiten und Speicherbedarf, die die Programmleistung beeinträchtigen können."
+    },
+    {
+      "question": "Was sind die Phasen des Spiralmodells?",
+      "answer": "Das Spiralmodell besteht aus Phasen, die in einem Koordinatensystem durch Quadranten zugeordnet werden."
+    },
+    {
+      "question": "Was ist das Product Backlog in Scrum?",
+      "answer": "Das Product Backlog ist eine Liste von priorisierten Anforderungen, die zeigt, wie komplex die Anforderungen im Vergleich zueinander sind, und wird nach Priorität abgearbeitet."
+    },
+    {
+      "question": "Was ist das Sprint Backlog?",
+      "answer": "Das Sprint Backlog besteht aus Anforderungen, die vom Product Owner ausgewählt und in täglich erledigbare Aufgaben für den Sprint unterteilt werden. Das Team bestimmt die Bearbeitung dieser Aufgaben und organisiert sich entsprechend."
+    },
+    {
+      "question": "Was zeigt ein Burndown Chart?",
+      "answer": "Ein Burndown Chart visualisiert die verbleibende Arbeit im Verhältnis zur Zeit und zeigt zwei Kurven: den geplanten und den tatsächlichen Fortschritt. Die X-Achse zeigt den Zeitverlauf in Tagen, und die Y-Achse die zu leistende Arbeit in Arbeitspaketen oder Stunden."
+    },
+    {
+      "question": "Was ist ein System- und Software Requirements Specification (SRS)?",
+      "answer": "Das SRS spezifiziert Softwareanforderungen nach IEEE-Standard für Entwickler und Kunden und umfasst sowohl das Lastenheft als auch das Pflichtenheft. IEEE definiert acht Charakteristika: korrekt, unzweideutig, vollständig, widerspruchsfrei, bewertbar, wichtigkeit, stabilität, verifizierbar, modifizierbar, und verfolgbar."
+    },
+    {
+      "question": "Was ist ein Testplan?",
+      "answer": "Ein Testplan beschreibt den Geltungsbereich und den Testplanungsprozess, einschließlich Anforderungen, Risiken, Testfällen und anderen Informationen für die Qualitätsprüfung. Testpläne können an den Bedarf des Teams angepasst werden."
+    },
+    {
+      "question": "Was sind Testprotokolle?",
+      "answer": "Ein Testprotokoll dokumentiert Ereignisse und Prüfpunkte während eines Testlaufs und deren Status."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Black-Box- und White-Box-Tests?",
+      "answer": "Beim Black-Box-Test wird die interne Funktion der Software nicht berücksichtigt, während beim White-Box-Test der Tester die interne Struktur und den Code kennt und diese Informationen zur Erstellung und Durchführung von Tests verwendet."
+    },
+    {
+      "question": "Was ist Äquivalenzklassenbildung?",
+      "answer": "Äquivalenzklassenbildung teilt eine Menge in verschiedene Teilmengen auf, basierend auf dem Verhalten der Elemente bezüglich einer ausgewählten Funktionalität, um präzise Testfälle abzuleiten."
+    },
+    {
+      "question": "Was ist Grenzwertanalyse?",
+      "answer": "Grenzwertanalyse ergänzt die Äquivalenzklassenbildung, indem sie die Grenzen jeder Äquivalenzklasse testet, um den Übergang zu einer anderen Klasse zu identifizieren, insbesondere bei Zahlenbereichen mit oberen oder unteren Schranken."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Zeilenüberdeckung und Anweisungsüberdeckung?",
+      "answer": "Zeilenüberdeckung bezieht sich auf die Ausführung aller Quellcode-Zeilen, während Anweisungsüberdeckung die Ausführung aller Anweisungen umfasst."
+    },
+    {
+      "question": "Was ist ein Singleton-Designmuster?",
+      "answer": "Das Singleton-Designmuster stellt sicher, dass nur eine Instanz einer Klasse erstellt werden kann."
+    },
+    {
+      "question": "Was ist ein Factory Method Pattern?",
+      "answer": "Das Factory Method Pattern ermöglicht es, Objekte durch Unterklassen über Fabrikmethoden zu erzeugen. Eine abstrakte Superklasse hat eine Methode für die Objekterstellung und eine Factory-Methode, die von den Subklassen implementiert wird."
+    },
+    {
+      "question": "Was ist das Wasserfallmodell?",
+      "answer": "Das Wasserfallmodell bietet eine klare Projektphasenstruktur und Meilensteine für die Entwicklungsdokumentation. Nachteile sind begrenzte Anpassungsmöglichkeiten bei sich ändernden Anforderungen und die späte Erkennung von Fehlern im Entwicklungsprozess."
+    },
+    {
+      "question": "Was ist Usability?",
+      "answer": "Usability bezieht sich auf die Nutzbarkeit eines Systems für bestimmte Ziele."
+    },
+    {
+      "question": "Was beschreibt die User Experience?",
+      "answer": "User Experience beschreibt die Wahrnehmungen und Reaktionen einer Person durch die Nutzung eines Produkts."
+    },
+    {
+      "question": "Was sind Technisch-Organisatorische Maßnahmen (TOM) zum Datenschutz?",
+      "answer": "TOM umfassen unter anderem Zutrittskontrolle, Zugangskontrolle, Zugriffskontrolle, Weitergabe- & Transportkontrolle von personenbezogenen Daten, Eingabekontrolle, Auftragskontrolle, Verfügbarkeitskontrolle, Trennungskontrolle, Organisationskontrolle und die Überprüfung der Wirksamkeit der TOM."
+    },
+    {
+      "question": "Was ist ein Gantt-Diagramm?",
+      "answer": "Ein Gantt-Diagramm wird zur zeitlichen Planung von Projektaufgaben und Abhängigkeiten verwendet, einschließlich kritischen Pfads und Zeitreserven."
+    },
+    {
+      "question": "Was ist das Anwendungsfalldiagramm?",
+      "answer": "Das Anwendungsfalldiagramm zeigt, wie ein System funktionieren soll, mit Anwendungsfällen und Beteiligten im Diagramm."
+    },
+    {
+      "question": "Was ist ein Aktivitätsdiagramm?",
+      "answer": "Ein Aktivitätsdiagramm ist ein Verhaltensdiagramm, das die dynamischen Aspekte eines Systems darstellt und zur Modellierung von Aktivitäten verwendet wird."
+    },
+    {
+      "question": "Was ist das MVC-Designmuster?",
+      "answer": "Das MVC-Designmuster teilt Software in Datenmodell, Präsentation und Programmsteuerung auf, um Flexibilität und Wiederverwendung zu ermöglichen."
+    },
+    {
+      "question": "Was ist ein Ticketsystem?",
+      "answer": "Ein Ticketsystem hilft Unternehmen, Kundenanfragen und -probleme zu verwalten, indem es eine strukturierte Methode zur Verfolgung und Lösung von Problemen bietet."
+    },
+    {
+      "question": "Was sind die Vorteile eines Ticketsystems?",
+      "answer": "Die Vorteile eines Ticketsystems umfassen eine höhere Effizienz bei der Bearbeitung von Kundenanfragen, bessere Organisation und Überblick sowie erhöhte Kundenzufriedenheit."
+    },
+    {
+      "question": "Was sind die Nachteile eines Ticketsystems?",
+      "answer": "Die Nachteile umfassen höhere Kosten, mögliche Komplexität, Anpassungsbedarf und Abhängigkeit von dem System."
+    },
+    {
+      "question": "Was ist ein Black-Box-Test?",
+      "answer": "Der Black-Box-Test ist ein Funktionstest, bei dem keine Kenntnisse über die interne Funktion der Software erforderlich sind und der Test von Anwendern durchgeführt wird, die nicht an der Entwicklung beteiligt waren."
+    },
+    {
+      "question": "Was ist ein White-Box-Test?",
+      "answer": "Der White-Box-Test ist eine Art Softwaretest, bei dem der Tester die interne Struktur und den Code der Software kennt und diese Informationen verwendet, um Tests zu erstellen und durchzuführen."
+    },
+    {
+      "question": "Was ist die Hauptfunktion der Versionverwaltung?",
+      "answer": "Die Versionverwaltung ermöglicht das Verfolgen von Änderungen an einer Datei im Laufe der Zeit, sodass ältere Versionen wiederhergestellt und verglichen werden können. Dies ist besonders nützlich bei gemeinsamen Projekten mit mehreren Personen."
+    },
+    {
+      "question": "Was sind die Rechte der Betroffenen gemäß Datenschutzgesetzen?",
+      "answer": "Die Rechte der Betroffenen umfassen das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit."
+    },
+    {
+      "question": "Was sind die Methoden der Datensicherung?",
+      "answer": "Es gibt drei Hauptmethoden der Datensicherung: Volldatensicherung, inkrementelle Datensicherung und differenzielle Datensicherung."
+    },
+    {
+      "question": "Was ist das Trennungsgebot?",
+      "answer": "Das Trennungsgebot gewährleistet, dass Daten, die zu unterschiedlichen Zwecken erhoben wurden, getrennt verarbeitet werden. Dies wird auch als Mandantentrennung der Systeme bezeichnet."
+    },
+    {
+      "question": "Was ist Weitergabekontrolle?",
+      "answer": "Weitergabekontrolle sorgt dafür, dass Daten bei der elektronischen Übertragung oder beim Transport nicht unbefugt gelesen, kopiert, verändert oder entfernt werden können. Dies kann durch Verschlüsselung und VPN-Technologien sichergestellt werden."
+    },
+    {
+      "question": "Was ist Phishing?",
+      "answer": "Phishing ist eine Methode, bei der dem Nutzer eine realitätsnahe Situation vorgespielt wird, um ihn dazu zu bewegen, seine Daten, insbesondere Zugangsdaten, freiwillig herauszugeben. Beispiele sind gefälschte Bank-Webseiten, auf denen der Nutzer seine Kontoinformationen eingibt."
+    },
+    {
+      "question": "Was sind die Vorteile eines Systems, das bessere Ressourcenauslastung bietet?",
+      "answer": "Ein System mit besserer Ressourcenauslastung ermöglicht es, dass viele Systeme gleichzeitig zugreifen, ist geeignet für häufige Zugriffe und bietet bessere Skalierbarkeit, unabhängig vom Standort."
+    },
+    {
+      "question": "Was sind die verschiedenen Testverfahren in der Softwareentwicklung?",
+      "answer": "Die verschiedenen Testverfahren sind: Unit-Tests, die einzelne Codeeinheiten oder Funktionen testen; Integrationstests, die die Interaktion zwischen verschiedenen Codeeinheiten oder Systemkomponenten testen; und Systemtests, die das gesamte System als Ganzes testen."
+    },
+    {
+      "question": "Was bedeutet SMART in Bezug auf Ziele?",
+      "answer": "SMART steht für spezifisch, messbar, akzeptiert, realisierbar und terminiert, und beschreibt Kriterien für das Setzen effektiver Ziele."
+    },
+    {
+      "question": "Was ist SQL?",
+      "answer": "SQL ist ein Datenbankmanagementsystem, das gut für strukturierte Daten geeignet ist und vertikal skaliert werden kann."
+    },
+    {
+      "question": "Was ist NoSQL?",
+      "answer": "NoSQL ist eine Art von Datenbankmanagementsystem, das verschiedene Daten flexibel speichert, skalierbar ist und große Datenmengen schnell verarbeiten kann. Beispiele sind Riak, Apache Cassandra, CouchDB, MongoDB und Redis."
+    },
+    {
+      "question": "Wie funktioniert MongoDB?",
+      "answer": "MongoDB verwendet die MongoDB Query Language und speichert Daten in JSON-ähnlichen Dokumenten. Ein Beispiel für eine Abfrage in MongoDB ist `db.collection.find({ name: 'John' })`."
+    },
+    {
+      "question": "Was sind die Vor- und Nachteile von JSON und XML?",
+      "answer": "JSON ist ideal für den Datenaustausch, einfach zu lesen und kompakter als XML, jedoch ohne Unterstützung für Schemas. XML ist flexibler als JSON, unterstützt Schemas und Namespaces und ermöglicht benutzerdefinierte Tags, ist jedoch schwieriger zu schreiben und hat eine starrere Struktur."
+    },
+    {
+      "question": "Wann sollte man JSON und wann XML verwenden?",
+      "answer": "JSON eignet sich gut für den Datenaustausch zwischen Server und Webanwendung, während XML besser für System-zu-System-Datenaustausch geeignet ist, da es unterschiedliche Zwecke unterstützt."
+    },
+    {
+      "question": "Was ist ein Paket in der Programmierung?",
+      "answer": "Ein Paket ist eine Gruppierung von verwandten Klassen und Schnittstellen."
+    },
+    {
+      "question": "Was sind Design Patterns?",
+      "answer": "Design Patterns sind flexible Vorlagen, die Entwicklern helfen, häufig auftretende Probleme in der Softwareentwicklung zu lösen. Sie können an die spezifischen Bedürfnisse angepasst werden und es gibt verschiedene Patterns für unterschiedliche Problembereiche."
+    },
+    {
+      "question": "Was sind Qualitätsmerkmale von Software?",
+      "answer": "Qualitätsmerkmale sind Kriterien, die helfen zu bewerten, ob eine Software gut ist oder nicht. Ein Beispiel für ein Qualitätsmerkmal ist die Funktionalität, die beschreibt, ob die Software das tut, was sie tun soll."
+    }
+  ]

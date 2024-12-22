@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+</head>
+<body>
+
+<canvas id="myCanvas" data-processing-sources="mySketch.pde"></canvas>
+
+<script type="application/processing" data-processing-target="myCanvas">
+// Set up the canvas
+size(500, 500);
+
+// Change the ellipse mode to CORNER
+ellipseMode(CORNER);
+noStroke(); //no lines
+
+var x = 20;
+var y = 200;
+var speed = 2;
+draw = function(){
+    background(202, 255, 97);
+    fill(0);
+    x = x+speed;// or x++;
+   
+    ellipse(x, y, 50,50);
+
+   // ellipse(position, mouseY, 50, 50);
+    //if (mouseIsPressed) {
+      //  ellipse(mouseX, position, 50, 50);
+    //}
+
+    if(x > 450 ){
+       speed = -5;
+    }
+    if(x < 0 ){
+        speed = 5;
+    }
+
+   // if( y > 450){
+   //       speed = 5;
+   //  }
+   //if(y < 0){
+  //  speed = -5;
+ //}
+ //y= y- speed; 
+}
+
+</script>
+
+</body>
+</html>
