@@ -1,0 +1,144 @@
+[
+      {
+        "question": "Was ist Data Definition Language (DDL)?",
+        "answer": "DDL definiert Datenstrukturen. Es enthält Befehle, um Datenbankstrukturen zu erzeugen, zu ändern oder zu entfernen."
+      },
+      {
+        "question": "Was ist Data Manipulation Language (DML)?",
+        "answer": "DML manipuliert Daten in der Datenbank. Es enthält Befehle, um Daten zu lesen, zu schreiben, zu ändern und zu löschen."
+      },
+      {
+        "question": "Was ist Data Control Language (DCL)?",
+        "answer": "DCL enthält Befehle, um Datenbankbenutzern Berechtigungen zu geben oder zu entziehen."
+      },
+      {
+        "question": "Was ist Data Query Language (DQL)?",
+        "answer": "DQL wird verwendet, um Daten abzufragen."
+      },
+      {
+        "question": "Was ist Transaction Control Language (TCL)?",
+        "answer": "TCL steuert Transaktionen in der Datenbank."
+      },
+      {
+        "question": "Was ist das TLS-Protokoll?",
+        "answer": "TLS nutzt hybride Verschlüsselung für sichere Kommunikation zwischen Client und Server."
+      },
+      {
+        "question": "Was macht ein Interpreter?",
+        "answer": "Ein Interpreter führt den Code in Echtzeit aus, bearbeitet Anweisungen Schritt für Schritt. Fehler müssen vor dem Fortfahren behoben werden. Vorteile sind schnelles Testen der Programme. Nachteile sind weniger Performance und mehr Speicherplatzbedarf."
+      },
+      {
+        "question": "Was macht ein Compiler?",
+        "answer": "Ein Compiler übersetzt den Programmcode in Maschinencode oder Bytecode, bevor er ausgeführt wird. Fehler werden während des Kompilierens gemeldet und müssen behoben werden. Vorteile sind potenzielle Optimierung des Codes und schnellere Ausführung. Nachteile sind längere Vorlaufzeiten aufgrund der Code-Übersetzung und lange Kompilierungszeiten bei großen Projekten."
+      },
+      {
+        "question": "Was ist Versionskontrolle?",
+        "answer": "Versionskontrolle verfolgt, speichert und verwaltet Änderungen."
+      },
+      {
+        "question": "Was sind Commits?",
+        "answer": "Commits sind Snapshots des Codes zu einem bestimmten Zeitpunkt."
+      },
+      {
+        "question": "Was sind Branches?",
+        "answer": "Branches ermöglichen die Entwicklung von unabhängigen Funktionen."
+      },
+      {
+        "question": "Was sind Merges?",
+        "answer": "Merges integrieren Änderungen aus einem Branch in einen anderen."
+      },
+      {
+        "question": "Was ist eine Bibliothek in der Programmierung?",
+        "answer": "Eine Bibliothek ist eine Sammlung von bereits geschriebenem Code, der Benutzern zur Verfügung steht, um Zeit zu sparen. Vorteile sind Zeitersparnis, Wiederverwendbarkeit, Zuverlässigkeit und Einfachheit. Nachteile sind Abhängigkeiten, Lernkurve und eingeschränkte Kontrolle."
+      },
+      {
+        "question": "Was sind REST-APIs?",
+        "answer": "REST-APIs sind weit verbreitet im Internet für die Kommunikation zwischen Systemen mit Merkmalen wie loser Kopplung und Caching. Vorteile sind Einfachheit, Konsistenz, Flexibilität, Skalierbarkeit, Zuverlässigkeit und Interoperabilität."
+      },
+      {
+        "question": "Was ist das Internet der Dinge (IoT) und Industrie 4.0?",
+        "answer": "IoT bezieht sich auf die Vernetzung von Geräten und Maschinen, während Industrie 4.0 auf die digitale Transformation in der Industrie abzielt. Vorteile sind Automatisierung, Kommunikation und Kosteneinsparung. Nachteile sind Arbeitslosigkeit, Privatsphäre und Technologieabhängigkeit."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Gesamtpuffer und Freie Puffer?",
+        "answer": "Gesamtpuffer ist die Zeit, um eine Aufgabe zu verschieben, ohne das Projektende zu beeinträchtigen. Freie Puffer ist die Zeit, um eine Aufgabe zu verschieben, ohne die folgende Aufgabe zu beeinflussen."
+      },
+      {
+        "question": "Was sind die Phasen im Fünf-Phasen-Modell?",
+        "answer": "Die Phasen im Fünf-Phasen-Modell sind: Anforderungsanalyse, Systemdesign, Programmierung und Modultests, System- und Integrationstests, Auslieferung und Wartung."
+      },
+      {
+        "question": "Was sind die Phasen im Sechs-Phasen-Modell?",
+        "answer": "Die Phasen im Sechs-Phasen-Modell sind: Planung, Definition, Entwurf, Implementierung, Tests, Auslieferung."
+      },
+      {
+        "question": "Was ist das Spiralmodell?",
+        "answer": "Das Spiralmodell umfasst die Phasen Zieldefinition, Risikoanalyse, Entwicklung und Tests sowie Auswertung."
+      },
+      {
+        "question": "Was ist das 3V-Modell in Bezug auf Big Data?",
+        "answer": "Das 3V-Modell beschreibt die steigende Menge, Geschwindigkeit und Vielfalt der erzeugten Daten."
+      },
+      {
+        "question": "Was ist Agile Softwareentwicklung und was ist Scrum?",
+        "answer": "Agile Softwareentwicklung umfasst iterative Entwicklungsprozesse. Scrum ist eine spezifische Methode innerhalb von Agile, die die Zusammenarbeit von Product Owner, Entwicklungsteam und Scrum Master betont. Sprints dauern ein bis vier Wochen und enden mit einem Review und einer Retrospektive."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einer Klasse und einem Objekt in der objektorientierten Programmierung?",
+        "answer": "Eine Klasse ist ein Oberbegriff für Objekte mit gemeinsamer Struktur und Verhalten, während ein Objekt eine Instanz einer Klasse ist, die zur Laufzeit existiert und Speicherplatz belegt."
+      },
+      {
+        "question": "Was sind Attribute und Methoden in der objektorientierten Programmierung?",
+        "answer": "Attribute sind Daten, die die Struktur von Objekten in einer Klasse beschreiben. Methoden sind Operationen, die das Verhalten von Objekten einer Klasse beschreiben und Parameter haben können."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen public, privat und protected Zugriffsmodifikatoren?",
+        "answer": "Public: Elemente sind öffentlich und von außen zugänglich. Privat: Elemente sind nur innerhalb der eigenen Klasse zugänglich. Protected: Erlaubt den Zugriff auf Elemente von abgeleiteten Klassen."
+      },
+      {
+        "question": "Was bedeutet Kapselung in der objektorientierten Programmierung?",
+        "answer": "Kapselung bedeutet, dass eine Eigenschaft oder Methode nur über Zugriffsmethoden abgefragt oder geändert werden kann."
+      },
+      {
+        "question": "Was ist Vererbung in der objektorientierten Programmierung?",
+        "answer": "Vererbung ist die Erweiterung einer bestehenden Klasse durch eine neue Klasse (Subklasse), die Attribute und Methoden von der Basisklasse erben und erweitern kann."
+      },
+      {
+        "question": "Was sind Assoziationen, Aggregationen und Kompositionen in der objektorientierten Modellierung?",
+        "answer": "Assoziationen zeigen Verbindungen zwischen unabhängigen Objekten. Aggregationen beschreiben eine 'Teil-von'-Beziehung, bei der Teile länger leben als das ganze Objekt. Kompositionen beschreiben eine 'Teil-von'-Beziehung, bei der die Lebensdauer der Teile der des gesamten Objekts entspricht."
+      },
+      {
+        "question": "Was ist ein Interface in der objektorientierten Programmierung?",
+        "answer": "Ein Interface definiert, welche Methoden eine Klasse implementieren muss. Es enthält nur Methodenköpfe und Konstanten. Klassen, die das Interface implementieren, müssen alle vorgegebenen Methoden enthalten."
+      },
+      {
+        "question": "Was sind abstrakte Klassen und abstrakte Methoden?",
+        "answer": "Abstrakte Klassen können keine Instanzen haben und dienen dazu, konkrete Unterklassen abzuleiten. Abstrakte Methoden müssen in den Unterklassen überschrieben werden. Alternativ können alle Methoden vollständig implementiert sein."
+      },
+      {
+        "question": "Was ist dynamische Polymorphie?",
+        "answer": "Dynamische Polymorphie ermöglicht es verschiedenen Objekten, unterschiedliches Verhalten bei gleicher Operation zu zeigen, abhängig vom tatsächlichen Objekttyp zur Laufzeit."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Überladen und Überschreiben in der objektorientierten Programmierung?",
+        "answer": "Überladen bedeutet, dass mehrere Methoden im selben Kontext unterschiedliche Parameter haben. Überschreiben bedeutet, dass eine Unterklasse eine Methode der Oberklasse implementiert und diese Methode bei einem Objekt der Unterklasse aufgerufen wird."
+      },
+      {
+        "question": "Was beschreibt die Datenmodellierung?",
+        "answer": "Datenmodellierung beschreibt Informationsobjekte eines Systems, definiert Attribute und Zusammenhänge für ein Datenschema, oft dargestellt durch ein ER-Modell."
+      },
+      {
+        "question": "Was ist das IHK-Tabellen-Modell?",
+        "answer": "Das IHK-Tabellen-Modell ist ein ER-Diagramm mit modifizierter Chen-Notation, das die Kardinalität zwischen Entitätstypen beschreibt."
+      },
+      {
+        "question": "Was sind Lastenheft und Pflichtenheft?",
+        "answer": "Das Lastenheft umfasst alle Anforderungen des Auftraggebers, während das Pflichtenheft detaillierte Anforderungen, Realisierungsvorgaben und Vertragsbedingungen enthält."
+      },
+      {
+        "question": "Was ist eine Projektskizze?",
+        "answer": "Eine Projektskizze ist ein Dokument zur Beschreibung der Projektidee, das oft als Entscheidungsgrundlage dient."
+      }
+]
+  
+  
